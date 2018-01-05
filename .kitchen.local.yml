@@ -1,0 +1,22 @@
+driver:
+  name: hyperv
+  parent_vhd_folder: C:\Hyper-V
+  parent_vhd_name: windows2012r2.vhdx
+  vm_switch: External
+  memory_startup_bytes: 4GB
+
+provisioner:
+  name: chef_zero
+  # deprecations_as_errors: true
+
+
+
+platforms:
+  - name: windows-2012r2
+  - name: windows-2012r2-12.7
+    provisioner:
+      require_chef_omnibus: 12.7.2
+  # - name: windows-2012r2-14.x
+  #   provisioner:
+  #     require_chef_omnibus: 14.0
+  
