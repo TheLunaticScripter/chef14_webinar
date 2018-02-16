@@ -1,4 +1,4 @@
 # chef14_webinar
 
-TODO: Enter the cookbook description here.
+Cookbook to demonstrate chef 13/14 deprecations
 

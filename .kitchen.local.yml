@@ -9,13 +9,14 @@ provisioner:
   name: chef_zero
   # deprecations_as_errors: true
 
-
+transport:
+  password: '!QAZXSW@1qazxsw2'
 
 platforms:
   - name: windows-2012r2
-  - name: windows-2012r2-12.7
+  - name: windows-2012r2-chef12
     provisioner:
-      require_chef_omnibus: 12.7.2
+      require_chef_omnibus: 12.21.31
   # - name: windows-2012r2-14.x
   #   provisioner:
   #     require_chef_omnibus: 14.0
